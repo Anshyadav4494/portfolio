@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ansh Yadav - Web Developer & Full Stack Developer Portfolio. Explore my projects, skills, and experience in web development.">
+    <meta name="keywords"
+        content="Ansh Yadav, Web Developer, Full Stack Developer, Portfolio, HTML, CSS, JavaScript, React">
+    <meta name="author" content="Ansh Yadav">
+    <title>Ansh Yadav | Web Developer Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">AY<span class="dot">.</span></a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-profile-badge" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/profile.jpg" alt="Ansh Yadav">
+                    <div class="profile-ring"></div>
+                </div>
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-title">Ansh Yadav</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Crafting beautiful, responsive, and user-friendly web experiences with modern technologies.
+                    Passionate about clean code and innovative design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="bi bi-envelope-fill"></i> Hire Me
+                    </a>
+                    <a href="Ansh yadav.pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Anshyadav4494" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ansh-yadav4494" target="_blank" class="social-icon"
+                        aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="assets/profile.jpg" alt="Ansh Yadav" id="profileImage">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Hi, I'm Ansh Yadav</h3>
+                    <p>
+                        I'm a passionate <strong>Web Developer</strong> and <strong>Full Stack Developer</strong> with a
+                        keen eye for design and a love for creating seamless user experiences. With expertise in modern
+                        web technologies, I transform ideas into beautiful, functional websites and applications.
+                    </p>
+                    <p>
+                        Currently pursuing Bachelor of Engineering in Computer Science at IIMT University, Meerut. I'm
+                        an active member of the Incubator Cell and have completed internships in web development,
+                        specializing in AI-powered medical applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>6+</h4>
+                            <p>Months Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ features</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="bi bi-react"></i>
+                    </div>
+                    <h3>React.js</h3>
+                    <p>Component-based UI</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="skill-icon">
+                        <i class="bi bi-node-plus"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend development</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic markup</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-css"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Modern styling</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="bi bi-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Responsive design</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="skill-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Relational databases</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="bi bi-database-fill"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL databases</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="skill-icon">
+                        <i class="bi bi-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Version control</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <h3>Power BI</h3>
+                    <p>Data visualization</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="skill-icon">
+                        <i class="bi bi-file-earmark-excel"></i>
+                    </div>
+                    <h3>MS Office</h3>
+                    <p>Word, Excel, PowerPoint</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Showcasing my recent work</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">May 2024 - November 2024 (6 months)</span>
+                        <h3>Web Developer & Full Stack Developer Intern</h3>
+                        <h4>SwasthMate (AI Medical Report Analyzer) - IIMT Incubator Cell, Meerut</h4>
+                        <p>Designed and developed a responsive interface for medical report upload and AI-based
+                            analysis. Built cloud-based dashboards to present OCR & NLP results effectively. Enhanced
+                            user experience with intuitive navigation and accessibility-focused design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2026</span>
+                        <h3>Bachelor of Engineering in CSE</h3>
+                        <h4>IIMT UNIVERSITY, MEERUT</h4>
+                        <p>Pursuing Bachelor of Engineering in Computer Science. Active member of the Incubator Cell at
+                            IIMT University. Completed various certifications including NSDC certificate in data
+                            science, Soft Skills certificate by NPTEL (IIT Roorkee), and Power BI certificate by Office
+                            Master.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Senior School Certificate Examination</h3>
+                        <h4>IVEY INTERNATIONAL SCHOOL, FIROZABAD</h4>
+                        <p>Completed senior school education with focus on science and mathematics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2020</span>
+                        <h3>Secondary School Examination</h3>
+                        <h4>IVEY INTERNATIONAL SCHOOL, FIROZABAD</h4>
+                        <p>Completed secondary school education with strong foundation in core subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Don't like forms? Send me an email. 👋</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>anshyadav1330@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Noida, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-phone-fill"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9368686513</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/Anshyadav4534" target="_blank" class="social-icon"
+                            aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-yadav-4494" target="_blank" class="social-icon"
+                            aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/anshyadav.01" target="_blank" class="social-icon"
+                            aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-send-fill"></i> Send Message
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ansh Yadav. All rights reserved.</p>
+                <p>Made with <i class="bi bi-heart-fill"></i> and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
