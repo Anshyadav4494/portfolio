@@ -5,7 +5,7 @@ A modern, responsive, and animated portfolio website showcasing my skills, proje
 
 🔥 **Live Portfolio:** *(Add link if hosted)*
 📌 **GitHub:** [https://github.com/Anshyadav4494](https://github.com/Anshyadav4494)
-📌 **LinkedIn:** [https://linkedin.com/in/](https://linkedin.com/in/) *(your id if required)*
+📌 **LinkedIn:** [https://linkedin.com/in/](https://linkedin.com/in/ansh-yadav4494)
 
 ---
 
