@@ -214,34 +214,41 @@ renderProjects();
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
 
-    // Basic validation
-    if (!name || !email || !subject || !message) {
-        showFormMessage('Please fill in all fields.', 'error');
-        return;
-    }
+    // EmailJS parameters
+    const params = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+    };
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        showFormMessage('Please enter a valid email address.', 'error');
-        return;
-    }
-
-    // Simulate form submission (replace with actual backend call)
-    setTimeout(() => {
-        showFormMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon! 🎉', 'success');
-        contactForm.reset();
-    }, 1000);
+    // EmailJS Send
+    emailjs
+        .send("service_rbrjhqj", "template_xiy862n", params)
+        .then(() => {
+            showFormMessage(
+                "Thank you! Your message has been sent successfully. I'll get back to you soon! 🎉",
+                "success"
+            );
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error("EmailJS Error:", error);
+            showFormMessage(
+                "Oops! Something went wrong. Please try again later.",
+                "error"
+            );
+        });
 });
+
 
 function showFormMessage(message, type) {
     formMessage.textContent = message;
@@ -258,18 +265,6 @@ function showFormMessage(message, type) {
 // ===================================
 const downloadResumeBtn = document.getElementById('downloadResume');
 
-downloadResumeBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Create a simple alert (replace with actual resume download)
-    alert('Resume download feature will be implemented. Please add your resume PDF to the assets folder and update this link!');
-
-    // Uncomment and update this when you have your resume PDF:
-    // const link = document.createElement('a');
-    // link.href = 'assets/Ansh_Yadav_Resume.pdf';
-    // link.download = 'Ansh_Yadav_Resume.pdf';
-    // link.click();
-});
 
 // ===================================
 // Profile Image Placeholder
